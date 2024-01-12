@@ -108,7 +108,7 @@ def compare_symbols_in_squares(image_path, shapes_directory):
 
     # Loop through each square and compare symbols
     for i, square in enumerate(squares):
-        square_path = f'shapes/tmp_square_{i}.png'  # Temporary file to save the square
+        square_path = f'tmps/tmp_square_{i}.png'  # Temporary file to save the square
         cv2.imwrite(square_path, square)     # Save the square to a temporary file
 
         # Compare symbols in the square
